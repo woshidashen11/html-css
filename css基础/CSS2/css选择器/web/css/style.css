@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+
+* { margin:0; padding:0;} /* 把浏览器所有元素的默认的外边距与内填充设为0*/
+
+#header,#nav,#banner,#content,#footer-link,#footer { width:999px; margin:0 auto;}
+
+#header { height:100px; background:red;} /* 常用声明 -- margin:0 auto; 设置了元素上下边距为0，左右自动 */
+#nav { height:59px; background:black; } 
+#banner { height:463px; background:url(../images/banner.jpg); }
+#content { height:546px; background:green; }
+#footer-link { height:252px; background:yellow;}
+#footer {  height:81px; background:blue;}

@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>伪类选择器</title>
+
+<style type="text/css">
+	
+	#box { width:300px; height:300px; background:red;} /* id是100的权重 */
+	.box1 { width:100px; height:100px; background:green;} /*　当选择符指向同一个对象的时候，并且css属性一样，就会触发权重大小的问题*/
+		/* class是10的权重*/
+
+</style>
+
+</head>
+<body>
+
+	<div id="box" class="box1">div的文字div的文字div的文字</div>
+    
+</body>
+</html> 
