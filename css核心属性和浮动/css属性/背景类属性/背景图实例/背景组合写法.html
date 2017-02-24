@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>背景组合写法</title>
+
+<style type="text/css">
+	
+.rencai { width:258px; height:241px; border:1px solid red; background:url(images/hua.jpg) no-repeat 167px 123px #fbfbfb;　/*　属性值顺序可打乱 */   /* 等价于==> background-image:url(images/hua.jpg); background-repeat:no-repeat; background-position:167px 123px; background-color:#fbfbfb; */}
+.hh {
+	width:300px;
+	height: 300px;
+	border:1px dashed red;
+	background:url(images/hua.jpg) no-repeat right bottom red;
+}
+</style>
+
+</head>
+<body>
+
+	<div class="rencai"></div>
+	<div class="hh"></div>
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>font复合式写法</title>
+
+<style type="text/css">
+	
+	.box1 { font:bold oblique 28px "微软雅黑";} /* 后面字体大小（28px）与字体("微软雅黑")不可以与其他属性调换位置，而且后两个属性必须同时存在*/
+	.box2 { background:red; font:18px/2em "黑体"; /*  等价于==> */ font:normal normal normal 18px/36px "黑体";}
+	
+</style>
+
+</head>
+<body>
+
+	<div class="box1">这是div里的一段文字</div>
+    
+    <div class="box2">这是box2里的文字</div>
+    
+
+
+
+</body>
+</html>
