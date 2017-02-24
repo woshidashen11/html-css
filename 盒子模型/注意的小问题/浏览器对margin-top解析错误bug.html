@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>浏览器对margin-top解析错误bug</title>
+<style type="text/css">
+	* { margin:0; padding:0;}
+	.fu { width:300px; height:300px;  background:red;}
+	.zi { width:300px; height:100px; background:yellow; margin-top:100px;}
+</style>
+</head>
+<body>
+
+	<div class="fu">
+    	<div class="zi"></div>
+    </div>
+
+</body>
+</html>
