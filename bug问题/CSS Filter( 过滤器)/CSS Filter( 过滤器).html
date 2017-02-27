@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=7" />
+<title>CSS Filter( 过滤器)</title>
+
+<style type="text/css">
+	
+	.box { width:600px; height:600px; background:red; /*所有浏览器的样式*/   background:yellow\9; /*ie的独有样式*/ *background:green; /*ie7以下的独有样式*/ _background:blue;/*ie6以下的独有样式*/ }
+	
+</style>
+
+</head>
+<body>
+
+	<div class="box"></div>
+    
+    1、所有浏览器的样式 红色<br />
+    2、ie浏览器的样式 黄色<br />
+    3、ie7以下的样式 绿色<br />
+    4、ie6以下的样式 蓝色<br />
+    
+    变了顺序，就出问题了，为什么？？
+   
+</body>
+</html>

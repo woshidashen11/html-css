@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title></title>
+<style type="text/css">
+	* { margin:0; padding:0;} 
+	body{behavior:url(csshover.htc);}  /* 让低版本IE6识别 元素:hover 的补丁*/
+	ul,ul li { list-style:none;}
+	a { text-decoration:none; font-size:14px;}
+	.nav { width:600px; height:40px; margin:20px auto;}
+	.nav li { float:left; position:relative;}
+	.nav li a { display:block; width:94px; height:40px; line-height:40px; text-align:center; background:#08a5e0; color:#fff;}
+	.nav li a:hover { border:1px solid #005c7e; height:38px; line-height:38px; width:92px; background:#006d96;}
+	
+	.nav li ul { position:absolute; left:0; top:40px; display:none; _width:96px; /* 只让ie6设置宽度96px，其他浏览器默认*/}
+	.nav li:hover ul { display:block;}
+	
+	.nav li ul li a { width:92px; height:27px; line-height:27px; border:1px solid #005c7e; border-top:0;}
+	.nav li ul li a:hover { height:27px; line-height:27px; border:1px solid #005c7e; border-top:0; background:#000;}
+	
+</style>
+</head>
+<body>
+	
+    
+    <ul class="nav">
+    	<li><a href="#">Home</a></li>
+        <li><a href="#">Html</a></li>
+        <li><a href="#">CSS</a>
+        	<ul>
+            	<li><a href="#">CSS入门</a></li>
+                <li><a href="#">CSS工具</a></li>
+                <li><a href="#">CSS技巧</a></li>
+                <li><a href="#">CSS实例</a></li>
+                <li><a href="#">CSS3</a></li>
+                <li><a href="#">CSS实例</a></li>
+                <li><a href="#">CSS实例</a></li>
+            </ul>
+        </li>
+        <li><a href="#">网页特效</a></li>
+        <li><a href="#">前端资讯</a>
+        	 <ul>
+            	<li><a href="#">CSS入门</a></li>
+                <li><a href="#">CSS工具</a></li>
+                <li><a href="#">CSS技巧</a></li>
+                <li><a href="#">CSS实例</a></li>
+                <li><a href="#">CSS3</a></li>
+                <li><a href="#">CSS实例</a></li>
+                <li><a href="#">CSS实例</a></li>
+            </ul>
+        </li>
+        <li><a href="#">前端技术</a></li>
+    </ul>
+    
+</body>
+</html>

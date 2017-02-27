@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+* { margin:0; padding:0;}
+ul,ul li { list-style:none;}
+a { text-decoration:none;}
+.box { width:715px; height:176px; margin:20px auto; background:url(../images/header.jpg) no-repeat; position:relative;}
+.box ul { position:absolute; bottom:0; left:23px;}
+.box ul li { float:left;}
+.box ul li a { display:block; width:66px; height:26px; background:url(../images/Navigation.gif) no-repeat; text-indent:-9999px;}
+
+.box ul li.about a { width:68px; height:26px; background-position:-66px 0;}
+.box ul li.archive a { width:79px; height:26px; background-position:-134px 0;}
+.box ul li.contact a { width:85px; height:26px; background-position:-213px 0;}
+.box ul li.links a { width:57px; height:26px; background-position:-298px 0;}
+
+.box ul li a:hover { background-position:0 -27px;}
+.box ul li.about a:hover { background-position:-66px -27px;}
+.box ul li.archive a:hover { background-position:-134px -27px;}
+.box ul li.contact a:hover { background-position:-213px -27px;}
+.box ul li.links a:hover { background-position:-298px -27px;}
+	
+	
+
+
+#home .box ul li.home a { background-position:0 -54px;}
+#about .box ul li.about a { background-position:-66px -54px;}
+#archive .box ul li.archive a { background-position:-134px -54px;}
+#contact .box ul li.contact a { background-position:-213px -54px;}
+#links .box ul li.links a { background-position:-298px -54px;}

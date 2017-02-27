@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>ie6的小问题</title>
+<style type="text/css">
+	* { margin:0; padding:0;}
+	.box { height:50px;}
+	.box div { float:left; _display:inline; width:50px; height:50px; background:red; margin-left:50px;}
+	.box1 { clear:both; margin-top:50px;}
+	.box1 span{ float:left; display:block; width:50px; height:50px; background:red; margin-left:50px;  }
+	
+	/* 当内联元素写float浮动的时候，ie6会把它解析成一个拥有块元素特点的内联元素 */
+	
+	/* 在IE6下， 在解析块元素float浮动时，给它加margin, 会错误地把浮向边界加倍显示
+	            在解析内联元素float浮动时，给它加margin, 正常显示的
+	*/
+</style>
+</head>
+<body>
+
+	<div class="box">
+    	<div></div>
+        <div></div>
+    </div>
+	
+	<div class="box1">
+    	<span></span>
+        <span></span>
+    </div>
+        
+</body>
+</html>

@@ -1,0 +1,16 @@
+我们做到的事情：
+
+1、\9 把现代标准浏览器与ie区分（过滤）开来，IE所有浏览器单独设置样式
+2、 * + <meta http-equiv="x-ua-compatible" content="ie=7" /> 把ie8低版本浏览器与ie9以上的IE高级浏览器区分（过滤）开来，IE8及IE8以下浏览器单独设置样式
+
+3、 _ 把ie6低版本浏览器与ie9以上的IE高级浏览器区分（过滤）开来，IE6及IE6以下浏览器单独设置样式
+
+
+当你的IE浏览器是IE8时，
+
+加上<meta http-equiv="x-ua-compatible" content="ie=7" />
+
+它就会以IE7的模式运行。
+
+
+IE7 = IE8， 可以把他们看作是双胞胎兄弟

@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>圆角导航2(图片整合)</title>
+<style type="text/css">
+	* { margin:0; padding:0;}
+	ul,ul li { list-style:none;}
+	a { text-decoration:none;}
+	.box { width:750px; height:80px; background:#fff3c7; margin:20px auto; position:relative;}
+	.box ul li { float:left; margin-right:1px;}
+	.box ul li a { display:block; background:url(images/left.gif) no-repeat 0 0;}
+	.box ul li a span{ display:block; height:27px; line-height:27px; font-size:14px; color:#000; padding:0 14px; background:url(images/right.gif) no-repeat right 0;}
+	
+	.box ul li.shouye a { background-position:0 -27px;}
+	.box ul li.shouye a span { background-position:right -27px;}
+	
+	.box ul li.qiche a { background-position:0 -117px;}
+	.box ul li.qiche a span { background-position:right -117px;}
+	
+	.box ul li a:hover { background-position:0 -57px; }
+	.box ul li a:hover span { background-position:right -57px; color:#fff;}
+	
+	.box ul li.fc a:hover { background-position:0 -87px;} 
+	.box ul li.fc a:hover span { background-position:right -87px;}
+	
+	.box ul li.yd a:hover { background-position:0 -147px;}
+	.box ul li.yd a:hover span { background-position:right -147px;}
+	
+	.box img { position:absolute; right:35px; top:-15px;}
+	
+	
+</style>
+</head>
+
+<body>
+
+	<div class="box">
+    
+		<ul>
+        	<li class="shouye"><a href="#"><span>首页</span></a></li>
+            <li><a href="#"><span>数码通讯</span></a></li>
+            <li class="fc"><a href="#"><span>房产</span></a></li>
+            <li class="qiche"><a href="#"><span>汽车</span></a></li>
+            <li class="yd"><a href="#"><span>运动</span></a></li>
+            <li><a href="#"><span>游戏</span></a></li>
+            <li><a href="#"><span>数码通讯</span></a></li>
+            <li><a href="#"><span>香港城</span></a></li>
+            <li><a href="#"><span>数码</span></a></li>
+            <li><a href="#"><span>淘宝商城</span></a></li>
+        </ul>
+        <img src="images/new.gif" />
+        
+    </div>
+
+</body>
+</html>

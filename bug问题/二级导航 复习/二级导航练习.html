@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<style>
+		*{margin: 0;padding: 0;}
+		    ul,ul li {list-style: none;}
+		    a {text-decoration: none;}
+			.box {width: 500px;height: 40px;margin: 50px auto;background: #08A5E0;}
+			.box .ul-1 {width:500px ;height: 40px;padding-left:20px ;}
+			.box .ul-1 li {float: left;position: relative;}
+			.box .ul-1 li a {width: 100px;height: 40px;display: block;line-height: 40px;text-align: center;border-left: 1px solid red;}
+		     .box .ul-1 li.last a {border-right:1px solid red;}
+		    .box .ul-1 li ul {position: absolute;left: 0;top: 40px;display: none;}
+		    .box .ul-1 li ul li {width: 100px;height: 40px;border-bottom: 1px solid red;border-right:1px solid red ;}
+		     .box .ul-1 li:hover ul {display: block;}
+		
+		</style>
+		
+	</head>
+	<body>
+		
+		<div class="box">
+			<ul class="ul-1">
+				<li><a href="#">首页</a></li>
+				<li><a href="#">内容</a>
+					<ul>
+						<li><a href="#">首页</a></li>
+						<li><a href="#">内容</a></li>
+						<li><a href="#">技术</a></li>
+						<li><a href="#">回访</a></li>
+					</ul>
+				</li>
+				<li><a href="#">技术</a></li>
+				<li class="last"><a href="#">回访</a></li>
+			</ul>
+		</div>
+	</body>
+</html>

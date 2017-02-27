@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* CSS Document */
+
+* { margin:0; padding:0; }
+ul,ul li { list-style:none;}
+a { text-decoration:none;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal;}
+.left { float:left;}
+.right { float:right;}
+
+#wrap-header { width:100%; height:62px; background:#232323;}
+.header { width:1003px; height:62px; margin:0 auto;}
+.logo {  width:158px; height:38px; float:left; padding:11px 0 0 12px;}
+/*.logo img { display:block;} 把图片转成block块元素，解决图片下方多出的3px bug*/
+.nav { float:right;}
+.nav ul li { float:left; background:url(../images/nav.jpg) no-repeat right center;}
+.nav ul li a { font-size:14px; color:#fff; display:block; /*a原本是内联元素，不能设置宽高，我把它转成块元素，a就能设置宽高*/ padding:0 15px; height:62px; line-height:62px;}
+.nav ul li.hover a {background:#f15a23; }
+.nav ul li.last { background:none;}
+.nav ul li a:hover { background:#f15a23;}
+
+#banner { width:100%; height:420px; background:url(../images/banner.jpg) no-repeat center center;}
+
+#wrap-product { width:100%; height:347px; background:#f5f5f5;}
+.product { width:1003px; height:347px; margin:0 auto; }
+.product .product-dl { padding-top:32px;}
+.product .product-dl dl { float:left; width:250px; height:287px; text-align:center; background:url(../images/dl.jpg) repeat-y right center;}
+.product .product-dl dl.last { background:none;}
+.product .product-dl dl dt { padding-top:22px;}
+.product .product-dl dl dd h3 { padding-top:16px; height:20px; overflow:hidden;} 
+.product .product-dl dl dd h3 a{ font-size:20px; color:#252e3b; display:block;}
+
+.product .product-dl dl dd h4 { padding-top:19px; font-size:12px; color:#546c7e;}
+.product .product-dl dl dd ul { padding-top:17px;}
+.product .product-dl dl dd ul li{ font-size:12px; line-height:18px; color:#b4daf5;}
+
+
+#wrap-news { width:100%; height:312px; background:#fff;}
+.news { width:1003px; height:271px; padding-top:41px; margin:0 auto;}
+.news-left { float:left; border:1px solid #ddd; padding:1px;}
+.news-left img { display:block;}
+.news-center { float:left; width:321px;  border-right:1px solid #dcdedf; margin-top:4px; padding:0 18px 0 14px;}
+.news h3 { font-size:18px; height:18px; color:#222;}
+.news-center h4 { padding-top:17px; font-size:14px; color:#444;}
+.news-center p { padding-top:12px; font-size:12px; color:#999; line-height:18px; border-bottom:1px dashed #999; padding-bottom:10px; text-indent:2em;}
+.news-center ul { padding-top:17px;} 
+.news-center ul li { background:url(../images/li.jpg) no-repeat left center; text-indent:12px; margin-bottom:12px;}
+.news-center ul li a { color:#444; font-size:12px; display:block; width:288px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.news-center ul li.last { margin-bottom:0;}
+
+.news-right { float:left; width:307px; height:217px; margin-left:12px; margin-top:4px;}
+.news-right .online-qq { height:24px; padding-top:18px; padding-bottom:12px;}
+.news-right h4 { height:52px; line-height:52px; color:#666; font-size:18px;}
+.news-right ul li { font-size:12px; line-height:24px; color:#666;}
+
+#wrap-footer-link { width:100%; height:214px; background:#222;}
+.footer-link { width:1003px; height:201px; padding-top:13px; margin:0 auto;}
+.footer-link .link-left { width:494px; padding-top:20px; background:url(../images/footer-bg.jpg) no-repeat right center;}
+.link-left ul { margin-right:40px; text-align:center;}
+.link-left ul.no-margin { margin-right:0;}
+.link-left ul li { height:24px; line-height:24px;}
+.link-left ul li.first { height:48px; line-height:48px;}
+.link-left ul li a { font-size:12px; color:#999;}
+.link-left ul li.first a { color:#FFF;}
+
+.footer-link .link-center { width:315px; height:193px; background:url(../images/footer-bg.jpg) no-repeat right center;}
+.link-center .map { width:315px; height:193px; background:url(../images/qf_map.png) no-repeat 39px 16px; position:relative;}
+
+.link-center .map span,.link-center .map a { color:#fff; font-size:12px; position:absolute; left:0; top:0;}
+
+.map a { display:block;  background:url(../images/disc_white_07.png) no-repeat;} 
+
+a.zhengzhou,a.xian,a.wuhan,a.chengdu,a.guangzhou,a.beijing { padding-right:11px; background-position:right center;}
+a.shenzhen,a.dalian { padding-left:11px; background-position:left bottom;}
+a.shanghai { padding-left:11px; background-position:left top;}
+
+.map a:hover { color:#f15a23; background-image:url(../images/disc_white_03.png);}
+
+
+.link-center .map span { top:60px; left:50px;}
+.link-center .map a.beijing { top:70px; left:167px;}
+.link-center .map a.dalian { top:60px; left:220px;}
+.link-center .map a.zhengzhou { top:94px; left:157px;}
+.link-center .map a.xian { top:104px; left:113px;}
+.link-center .map a.wuhan { top:118px; left:149px;}
+.link-center .map a.shanghai { top:118px; left:212px;}
+.link-center .map a.chengdu { top:131px; left:108px;}
+.link-center .map a.guangzhou { top:147px; left:146px;}
+.link-center .map a.shenzhen { top:147px; left:188px;}
+
+
+
+
+
+.footer-link .link-right { width:194px; height:193px; background:url(../images/weixin.jpg) no-repeat 32px 7px;}
+
+#wrap-footer { width:100%; height:27px; padding-top:18px; background:#101010; text-align:center; color:#999; font-size:12px;}

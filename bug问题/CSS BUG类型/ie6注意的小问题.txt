@@ -1,0 +1,1 @@
+在ie6下，内联元素转成块之后（display:block），它会默认解析它的宽度为100%，解决它的一个写法：可以把display:block转成display:inline-block;

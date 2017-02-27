@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+
+/** 清除内外边距 **/
+body,h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+form, fieldset, legend, button, input, textarea, /* form elements 表单元素 */
+th, td /* table elements 表格元素 */ {
+    margin: 0;
+    padding: 0;
+}
+
+a { text-decoration:none; font-size:12px;}
+img { display:block; border:0;}
+ul,ul li { list-style:none;}
+
+.top,.header,.nav,.banner,.contact,.footer-link,.footer { width:1002px; margin:0 auto;}
+
+#wrap-top { background:#e4e4e4;}
+
+.top { height:24px; padding-top:11px;}
+.top .top-nav { float:left;}
+.top .top-nav a { color:#696969; float:left; display:block; background:url(../images/li.jpg) no-repeat right top; padding:0 10px;}
+.top .search-wrap { float:right; width:384px; height:20px;}
+.search-wrap .search-a { float:left; padding-top:2px;}
+.search-wrap .search-a a { float:left; margin-left:17px; color:#676c68;} /* 当内联元素写float浮动的时候，ie6会把它解析成一个拥有块元素特点的内联元素，而内联元素在ie6下，是不会错误地把浮向边界的元素margin加倍显示 */
+.search-wrap .search { float:right;}
+.search-wrap .search input { float:left;}
+.search .txt { border:0; width:140px; height:20px; line-height:20px; text-indent:5px; color:#cacbd0;}
+.search .sub { border:0; width:29px; height:20px; background:url(../images/search.jpg) no-repeat right top;}
+
+#wrap-header {}
+.header { height:98px; background:url(../images/bg.jpg) no-repeat 684px 4px; }
+.header .logo {  padding:18px 0 0 14px;}
+
+#wrap-nav { background:#d92b34;}
+.nav { height:44px; background:#c8141f;}
+.nav ul {text-align:center;} /* text-align:center; 对内联居中起效果    与 margin:0 auto; */
+.nav ul li { display:inline;} /* 把li转成内联 */
+.nav ul li a { display:inline-block; padding:0 18px; height:44px; line-height:44px; color:#fff; font-weight:bold; font-size:14px;}
+.nav ul li a:hover { background:orange;}
+
+#wrap-banner { background:#e6e6e6;}
+.banner { height:327px; background:blue;}
+.banner .banner-img { width:669px; height:327px; background:url(../images/banner.jpg) no-repeat;}
+
+#wrap-contact { background:red;}
+.contact { height:586px; background:green;}
+
+#wrap-footer-link { background:#ebebeb;}
+.footer-link { height:66px; background:orange;}
+
+
+#wrap-footer { height:130px; background:#302728;}
+.footer {  height:130px; background:yellow;}
+
