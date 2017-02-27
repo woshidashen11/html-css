@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>效果图</title>
+<style type="text/css">
+	* { margin:0; padding:0;}
+	ul,ul li { list-style:none;}
+	.list { width:700px; height:40px; margin:20px auto; background:#08a5e0;}
+	.list li { float:left; position:relative;}
+	.list li a { text-decoration:none; color:#fff; display:block; width:96px; text-align:center; height:40px; line-height:40px; font-size:14px;}
+	.list li a:hover { border:1px solid #005879; width:94px; height:38px; line-height:38px; background:#006d96;}
+	.list li ul { display:none; position:absolute; left:0; top:40px; background:#08a5e0;}
+	
+	.list li:hover ul { display:block;}
+	
+	.list li ul li a{ height:28px; line-height:28px; border-bottom:1px solid #005879;}
+	.list li ul li a:hover { width:96px;height:28px; line-height:28px; border:0; border-bottom:1px solid #005879; background:#000;}
+	
+	
+	.banner { width:800px; height:300px; background:red; margin:0 auto;}
+	
+	
+</style>
+</head>
+<body>
+	
+   <ul class="list">
+       <li><a href="#">Home</a></li>
+       <li><a href="#">Html</a></li>
+       <li><a href="#">CSS</a>
+       	    <ul>
+            	<li><a href="#">CSS入门</a></li>
+                <li><a href="#">CSS工具</a></li>
+                <li><a href="#">CSS软件</a></li>
+                <li><a href="#">CSS软件</a></li>
+                <li><a href="#">CSS软件</a></li>
+                <li><a href="#">CSS软件</a></li>
+                <li><a href="#">CSS软件</a></li>
+            </ul>
+       </li>
+       <li><a href="#">网页特效</a></li>
+       <li><a href="#">前端资讯</a>
+       		<ul>
+            	<li><a href="#">CSS入门</a></li>
+                <li><a href="#">CSS工具</a></li>
+                <li><a href="#">CSS软件</a></li>
+                <li><a href="#">CSS软件</a></li>
+                <li><a href="#">CSS软件</a></li>
+                <li><a href="#">CSS软件</a></li>
+                <li><a href="#">CSS软件</a></li>
+            </ul>
+       </li>
+       <li><a href="#">前端技能</a></li>
+   </ul>
+   
+   <div class="banner"></div>
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>relative相对定位 与 absolute绝对定位</title>
+<style type="text/css">
+	* { margin:0; padding:0;}
+	.box1 { width:300px; height:300px; background:red; float:left;  position:relative; left:50px; top:50px; } /* 相对定位， 注意两点： 第一点，它是有个本体存在， 第二点，它是根据它本身的位置偏移*/
+	.box2 { width:300px; height:300px; background:yellow; float:left;}
+	.box4 { width:300px; height:300px; background:black; clear:both; color:#fff;}
+	
+	
+	.box3 { width:200px; height:200px; background:green; position:absolute; left:80px; top:80px;} /* 绝对定位 就是灵魂，直接就浮动起来， "人"是影响不到它的 */
+</style>
+</head>
+
+<body>
+
+	<div class="box1">未定义相对定位之前，它也是人，死了之后，变成灵魂，浮起来了</div><!--相对定位-->
+    <div class="box2">正常元素 "人"</div><!--正常元素 "人"-->
+    <div class="box4">正常元素 "人"</div><!--正常元素 "人"-->
+
+    
+    
+    <div class="box3">绝对定位（灵魂）</div>
+
+</body>
+</html>
