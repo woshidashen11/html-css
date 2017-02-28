@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>demo</title>
+<style type="text/css">
+
+	.box-1 { /*width:800px;*/ background:red; overflow:hidden; _zoom:1; /* zoom:1; 在IE6下，等同于现代浏览器的overflow:hidden;功能是自动计算父块高度*/} /* 在IE6下，如果父块里面的子元素全是浮动元素，父块必须得有宽度，overflow:hidden(自动计算父块的高度)才能正确解析*/
+	.box-1 .box1 { width:400px; height:200px; background:blue; float:left; }
+	.box-1 .box2 { width:400px; height:200px; background:yellow; float:right; }
+	
+	
+	.box-2 { background:green;}
+</style>
+
+</head>
+<body>
+
+	<div class="box-1">
+    	<div class="box1">box1</div>
+        <div class="box2">box2</div>
+    </div>
+    
+    
+    <div class="box-2">box-2</div>
+    
+</body>
+</html>

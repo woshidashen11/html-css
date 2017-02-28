@@ -1,0 +1,129 @@
+@charset "utf-8";
+/* CSS Document */
+
+/** 清除内外边距 **/
+body,h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+form, fieldset, legend, button, input, textarea, /* form elements 表单元素 */
+th, td /* table elements 表格元素 */ {
+    margin: 0;
+    padding: 0;
+}
+
+a { text-decoration:none; font-size:12px;}
+img { display:block; border:0;} /* img { display:block 去除包含块图片下方3px的bug}*/
+ul,ul li { list-style:none;}
+body { font:12px "宋体";}
+
+.top,.header,.nav,.banner,.contact,.footer-link,.footer { width:1002px; margin:0 auto;}
+
+#wrap-top { background:#e4e4e4;}
+
+.top { height:24px; padding-top:11px;}
+.top .top-nav { float:left;}
+.top .top-nav a { color:#696969; float:left; display:block; background:url(../images/li.jpg) no-repeat right top; padding:0 10px;}
+.top .search-wrap { float:right; width:384px; height:20px;}
+.search-wrap .search-a { float:left; padding-top:2px;}
+.search-wrap .search-a a { float:left; margin-left:17px; color:#676c68;} /* 当内联元素写float浮动的时候，ie6会把它解析成一个拥有块元素特点的内联元素，而内联元素在ie6下，是不会错误地把浮向边界的元素margin加倍显示 */
+.search-wrap .search { float:right;}
+.search-wrap .search input { float:left;}
+.search .txt { border:0; width:140px; height:20px; line-height:20px; text-indent:5px; color:#cacbd0;}
+.search .sub { border:0; width:29px; height:20px; background:url(../images/search.jpg) no-repeat right top;}
+
+#wrap-header {}
+.header { height:98px; background:url(../images/bg.jpg) no-repeat 684px 4px; }
+.header .logo {  padding:18px 0 0 14px;}
+
+#wrap-nav { background:#d92b34;}
+.nav { height:44px; background:#c8141f;}
+.nav ul { width:100%; text-align:center;} /* text-align:center; 对内联居中起效果    与 margin:0 auto; */
+.nav ul li { display:inline;} /* 把li转成内联  内联元素与文字类似(文字也是inline) */
+.nav ul li a { display:inline-block; padding:0 15px; height:44px; line-height:44px; color:#fff; font-weight:bold; font-size:14px;}
+.nav ul li a:hover { background:orange;}
+
+#wrap-banner { background:#e6e6e6;}
+.banner { height:327px;}
+.banner .banner-img { width:669px; height:327px; background:url(../images/banner.jpg) no-repeat; float:left;}
+.banner .banner-news { width:333px; height:324px; border-bottom:3px solid #c8141f; float:left; background:#eee;}
+.banner .banner-news ul { padding:10px 40px 0;}
+.banner .banner-news ul li { line-height:18px; padding-bottom:7px; border-bottom:1px dashed #dadada; margin-top:9px;}
+.banner .banner-news ul li a { color:#010002;}
+.banner .banner-news ul li a span { color:#777;}
+.banner .banner-news p { float:right; padding-right:40px; padding-top:12px; }
+.banner .banner-news p a { display:block; color:#124294;}
+
+
+#wrap-contact { background:url(../images/contact-bg.gif) repeat-x center bottom;}
+.contact { padding-top:41px; padding-bottom:90px; overflow:hidden; }
+.contact .contact-left { width:730px; float:left;}
+.contact .contact-left-top { overflow:hidden; _width:100%; /* 在IE6下，如果父块里面的子元素全是浮动元素，父块必须得有宽度，overflow:hidden(自动计算父块的高度)才能正确解析*/} 
+.contact .contact-left-top .t-left { width:270px; float:left;}
+.contact h3 { font-size:16px; height:38px; line-height:38px; border-bottom:2px solid #dfdfdf;}
+.t-left dl { padding-top:20px;}
+.t-left dl dt { }
+.t-left dl dd { padding-top:8px;}
+.t-left dl dd a { display:block; width:232px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; margin:0 auto;}
+
+.contact .contact-left-top .t-right { width:422px; float:right;}
+.t-right .right-dl { padding-top:6px;}
+.t-right .right-dl dl { margin-top:13px; overflow:hidden; _zoom:1;}
+.t-right .right-dl dl dt { float:left;}
+.t-right .right-dl dl dd { float:right; width:334px;}
+.t-right .right-dl dl dt .box{ width:60px; height:61px; background:#c8141f; color:#fff; position:relative;}
+.t-right .right-dl dl dt .box .p1 { font-size:20px; font-weight:bold; position:absolute; left:50%; margin-left:-11px; top:6px;}
+.t-right .right-dl dl dt .box .p2 { font-size:12px; position:absolute; left:50%; _width:41px; margin-left:-21px; bottom:7px;}
+
+.t-right .right-dl dl dd h4 { height:20px; line-height:20px;}
+.t-right .right-dl dl dd h4 a{ font-size:12px; color:#2a2926; display:block; width:278px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.t-right .right-dl dl dd p { font-size:12px; line-height:20px; color:#6f6e74;}
+
+.contact-left .contact-left-bottom { margin-top:50px; overflow:hidden;}
+.contact-left-bottom .bottom-left {width:270px; float:left;}
+
+.contact-left-bottom ul { padding-top:20px;}
+.contact-left-bottom ul li { height:24px; line-height:24px;}
+.contact-left-bottom ul li a { float:left; font-size:12px; width:217px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; color:#343432; }
+.contact-left-bottom ul li span { float:right; font-size:12px; color:#666;}
+
+.contact-left-bottom .bottom-right {width:422px; float:right;}
+
+
+.contact .contact-right { width:240px; float:right;}
+.contact-right .right-top { width:231px; height:263px; background:url(../images/right-bg.jpg); padding:9px 0 0 9px;}
+.contact-right .right-top .right-box { height:3px; overflow:hidden; /* font-size:0; */ background:url(../images/right-box.jpg) no-repeat; margin-top:15px;}
+.contact-right .right-top .img-2 { margin-top:10px;}
+.contact-right .right-top .img-3 { margin-top:11px;}
+
+.contact-right .right-bottom { padding-top:43px;}
+.contact-right .right-bottom ul { _width:100%; border-bottom:1px solid #ccc; overflow:hidden;}
+.contact-right .right-bottom ul li { float:left; margin-right:21px;}
+.contact-right .right-bottom ul li a { font-size:16px; color:#878787; display:block; }
+.contact-right .right-bottom ul li a:hover { color:#c8141f; border-bottom:2px solid #c8141f; padding-bottom:9px;}
+.contact-right .right-bottom ul li.hover a { color:#c8141f; border-bottom:2px solid #c8141f; padding-bottom:9px;}
+
+.right-bottom .form1 { padding-top:28px;}
+.right-bottom .form1 div { margin-top:4px;}
+.right-bottom .form1 .f-input { height:30px; _height:32px; overflow:hidden;}
+.right-bottom .form1 .txt { width:216px; height:26px; line-height:26px; text-indent:5px; border:0; border:1px solid #ccc; *margin-left:-5px; /* *过滤器 兼容ie7 */}
+.right-bottom .form1 .sub { width:81px; height:24px; border:0; background:url(../images/sub.jpg); float:left;}
+.right-bottom .form1 a { float:left; margin-left:50px; margin-top:11px; color:#333331;}
+
+#wrap-footer-link { background:url(../images/footer-bg.gif) repeat-x;}
+.footer-link { height:66px; position:relative; }
+.footer-link .jt { position:absolute; left:50%; top:0; margin-left:-29px;}
+.footer-link ul { padding-top:24px; overflow:hidden; _width:100%; text-align:center;}
+.footer-link ul li { display:inline; height:42px; line-height:42px; margin-right:153px;}
+.footer-link ul li.last { margin-right:0;}
+.footer-link ul li a { color:#020034;}
+
+#wrap-footer { height:130px; background:#302728;}
+.footer {  height:130px;}
+.footer ul { text-align:center; border-bottom:2px solid #3b3233; height:48px;}
+.footer ul li { display:inline; height:48px; line-height:48px;}
+.footer ul li a { border-right:1px solid #cfcfcf; color:#cfcfcf; padding:0 9px;}
+.footer ul li a:hover { color:red;}
+.footer ul li.last a { border-right:0;}
+.footer p { color:#939290; text-align:center;}
+.footer p.p1 { padding-top:25px;}
+.footer p.p2 { padding-top:13px;}
