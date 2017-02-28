@@ -1,0 +1,84 @@
+@charset "utf-8";
+/* CSS Document */
+
+* { margin:0; padding:0;} /* 把浏览器所有元素的默认的外边距与内填充设为0   通配符权重为0 */
+body { font:12px "宋体";}
+ul,ul li { list-style:none;}
+.left { float:left;}
+.right { float:right;}
+a { text-decoration:none;}
+
+#header,#nav,#banner,#news,#product,#footer-link,#footer { width:999px; margin:0 auto;}
+
+#header {width:999px; height:100px;} /* 常用声明 -- margin:0 auto; 设置了元素上下边距为0，左右自动 */
+.logo { width:244px; height:22px; float:left; margin-top:42px; padding-left:21px;} /* 当元素是浮动的情况下，margin-top是无解析bug问题， 优先用padding-top布局 */
+.search { width:227px; height:28px; float:right; padding-top:39px; padding-right:20px;}
+.search .search-form { width:225px; height:26px; background:#f1f1f1; border:1px solid #e5e5e5;}
+.search .search-form input { }
+.search .search-form .txt { border:0; width:202px; text-indent:14px; color:#8a8a8a; height:26px; float:left; background:none;}
+.search .search-form .sub { border:0; width:23px; height:26px; float:left; background:url(../images/search.jpg) no-repeat left center;}
+
+
+#wrap-nav { height:59px; background:url(../images/nav.jpg);}
+#nav { width:999px; height:59px; margin:0 auto;  } 
+
+#nav ul { padding-left:27px;}
+#nav ul li { float:left; height:59px; line-height:59px; border-right:1px solid #494949; padding:0 29px;}
+#nav ul li a { text-decoration:none; color:#fff; font-size:14px; font-weight:bold;}
+#nav ul .no-border { border-right:none;}
+
+#banner { height:463px; background-image:url(../images/banner.jpg);}
+
+#news { overflow:hidden;}
+.news-left { width:450px; padding-top:36px; padding-left:22px; padding-right:28px; float:left;}
+#news h3,#product h3 { font-size:18px;}
+.news-left ul { padding-top:24px;} /*包含块没设高度，它是靠里面的元素撑大*/
+.news-left ul li { height:24px; line-height:24px;}
+.news-left ul li a { font-size:12px; text-decoration:none; color:#585858; float:left;}
+.news-left ul li span { font-size:12px; color:#979797; float:right;}
+
+.news-center { width:192px; min-height:353px; height:auto!important; height:353px; padding:36px 23px 0 25px; float:left; background:#f1f1f1;}
+.news-center p.p-1 { font-size:14px; line-height:26px; padding-top:33px; color:#4c4c4c;}
+.news-center p.p-1 span { font-size:12px;}
+
+.news-center p.p-2 { font-size:12px; line-height:24px; padding-top:12px; color:#9c9c9c;}
+
+
+.news-right { width:180px; height:204px; padding:36px 54px 0 25px; float:left; background:url(../images/hua.jpg) no-repeat #fbfbfb 166px 121px;}
+.news-right p { line-height:24px; padding-top:21px; color:#626262;}
+.news-right div { width:67px; height:18px; padding-top:50px;}
+
+
+#product { width:977px; height:275px; padding-top:30px; padding-left:22px;}
+#product .product-dl { padding-top:17px;}
+#product dl { width:210px; height:191px; float:left; margin-right:40px;}
+#product dl dt { width:211px; height:135px;}
+#product dl dd { line-height:24px; padding-top:13px; color:#707070;}
+#product .last { margin-right:0;} 
+
+#wrap-footer-link { width:100%; height:222px; background:#e5e5e5;}
+#footer-link {width:980px; height:222px; padding:30px 0 0 19px; }
+#footer-link h3 { color:#636363; font-size:16px; border-bottom:1px solid #c2c2c2; padding-bottom:11px; text-indent:12px;}
+.link-left { width:447px; padding-left:5px; height:175px; margin-right:49px;}
+.link-left .link-ul { padding-top:15px;}
+.link-left .link-ul .ul-1 { width:151px;}
+.link-left .link-ul .ul-2 { width:193px;}
+.link-left .link-ul .ul-3 { width:103px;}
+
+#footer-link ul li { height:24px; line-height:24px; background:url(../images/li.jpg) no-repeat left center; padding-left:13px;}
+#footer-link ul li a { font-size:12px; color:#5f5f5f;}
+
+.link-center { width:154px; height:175px; margin-right:50px;}
+#footer-link ul.p-t { padding-top:15px; padding-left:11px;}
+
+.link-right { width:257px; height:191px; background:url(../images/map.jpg) no-repeat 31px 41px;} 
+#footer {  height:57px; padding-top:24px;}
+.footer-left { padding-left:15px;}
+.footer-left a { font-size:12px; color:#8b8b8b; border-right:1px solid #8e8e8e; padding:0 7px;}
+.footer-left a.last { border-right:0;}
+.footer-right { font-size:12px; color:#8b8b8b;}
+.footer-right a { padding:0 5px;}
+
+
+
+

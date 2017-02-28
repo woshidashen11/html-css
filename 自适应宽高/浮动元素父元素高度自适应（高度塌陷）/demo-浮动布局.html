@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>demo-正常布局</title>
+<style type="text/css">
+	* { margin:0; padding:0;}
+	.box { width:800px;  /* 方法一：overflow:hidden; hack写法，父块可以自动计算高度*/ background:red;}
+	/*.clear { clear:both; overflow:hidden; height:0;}  方法二：空div清除浮动 */
+	.clear:after { content:"."; display:block; clear:both; height:0; overflow:hidden; visibility:hidden;}
+	.box1 { width:200px; height:200px; background:yellow; float:left;}
+	.box2 { width:200px; height:200px; background:green; float:left;}
+	.box3 { width:200px; height:200px; background:black; float:left;}
+	.box4 { width:200px; height:200px; background:#F90;}
+	
+	.box-2 { width:1000px; height:200px; background:blue;}
+</style>
+
+</head>
+<body>
+
+	<div class="box">
+    
+    	<div class="box1"></div><div class="box2">asdlajdlksajdlk</div><div class="box3"></div>
+        <div class="clear"></div>
+        <div class="box4"></div>
+        
+    </div>
+    
+    <div class="clear"></div>
+    
+
+    <div class="box-2"></div>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>元素具备最小高度的自适应</title>
+<style type="text/css">
+	* { margin:0; padding:0;}
+	.box1 { height:105px; background:url(images/1.jpg) no-repeat center center;}
+	.box2 { height:201px; background:url(images/2.jpg) no-repeat center center;}
+	.box3 { height:60px; background:url(images/3.jpg) no-repeat center center;}
+	.box4 { width:1000px; margin:0 auto; /* min-height:500px; ie7以上、 还有其他主流标准浏览器可以识别，但IE6不识别  _height:500px; height在IE6下， 就类似min-height*/   min-height:500px; height:auto!important; height:500px;}
+	.box5 { height:126px; background:url(images/4.jpg) no-repeat center center;}
+</style>
+
+</head>
+<body>
+
+	<div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4">这是是一段box4的文字这是是一段box4这是这是</div>
+    <div class="box5"></div>
+
+</body>
+</html>
